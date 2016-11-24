@@ -1,0 +1,75 @@
+<div ng-controller="headerCtrl as header">
+    <md-toolbar class="main" md-whiteframe="4">
+        <div class="md-toolbar-tools">
+            <h3 class="brand">
+                @GeekOSK
+                <md-tooltip>
+                    <span style="font-size: 12px;">ACTUALLY, ITS <b>OMKAR KULKARNI</b>...</span>
+                </md-tooltip>
+            </h3>
+            <div class="menu-normal">
+                <div class="nav-links right">
+                    <a class="md-icon-button" md-ink-ripple="#000">
+                        <i class="material-icons">work</i>
+                        <md-tooltip>
+                            <b style="font-size: 12px;">PORTFOLIO!</b>
+                        </md-tooltip>
+
+                    </a>
+                    <a class="md-icon-button" md-ink-ripple="#000">
+                        <i class="material-icons">face</i>
+                        <md-tooltip>
+                            <b style="font-size: 12px;">BIO!</b>
+                        </md-tooltip>
+                    </a>
+                    <a class="md-icon-button" md-ink-ripple="#000">
+                        <i class="material-icons">stars</i>
+                        <md-tooltip>
+                            <b style="font-size: 12px;">MY FAVORITES WHILE CODING!</b>
+                        </md-tooltip>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </md-toolbar>
+    <md-fab-speed-dial md-direction="down" md-open="header.isOpen" class="md-scale fab-menu md-fab-top-right">
+        <md-fab-trigger class="fab-menu-trigger">
+            <md-button aria-label="menu" class="md-fab md-primary">
+                <md-icon aria-label="menu">menu</md-icon>
+            </md-button>
+        </md-fab-trigger>
+
+        <md-fab-actions style="padding-left:7px;">
+            <div>
+                <md-button class="md-fab md-raised md-mini">
+                    <md-tooltip md-autohide="false" md-visible="fabMenuFocused" md-direction="left">
+                        PORTFOLIO
+                    </md-tooltip>
+
+                    <md-icon>work</md-icon>
+                </md-button>
+            </div>
+            <div>
+                <md-button class="md-fab md-raised md-mini">
+                    <md-tooltip md-autohide="false" md-visible="fabMenuFocused" md-direction="left">
+                        BIO
+                    </md-tooltip>
+
+                    <md-icon>face</md-icon>
+                </md-button>
+            </div>
+            <div>
+                <md-button class="md-fab md-raised md-mini">
+                    <md-tooltip md-autohide="false" md-visible="fabMenuFocused" md-direction="left">
+                        MY FAVORITES WHILE CODING!
+                    </md-tooltip>
+
+                    <md-icon>stars</md-icon>
+                </md-button>
+            </div>
+        </md-fab-actions>
+    </md-fab-speed-dial>
+</div>
+
+

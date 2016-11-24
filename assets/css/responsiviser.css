@@ -1,0 +1,14 @@
+.menu-normal{
+    display: none;
+}
+.fab-menu{
+    display: block;
+}
+@media screen and (min-width: 600px){
+    .fab-menu{
+        display: none;
+    }
+    .menu-normal{
+        display: block;
+    }
+}
